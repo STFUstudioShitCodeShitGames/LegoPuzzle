@@ -12,4 +12,9 @@ public class ManiJol : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+
+    public void Backham()
+    {
+        SceneManager.LoadScene(0);
+    }
 }

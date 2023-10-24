@@ -92,6 +92,7 @@ public class ShmerPer : MonoBehaviour
         Shubka();
         
         StopCoroutine(_shuraba);
+        _shuraba = null;
     }
 
     private void Shubka()
@@ -203,6 +204,9 @@ public class ShmerPer : MonoBehaviour
 
     public void Trudna()
     {
+        if (_shuraba != null)
+            return;
+        
         Cjomba(false);
 
         _ufse.Clear();
